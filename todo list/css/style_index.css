@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Light grey background for the body */
+    color: #333; /* Dark grey text color */
+}
+
+header {
+    background-color: #000; /* Black background for header */
+    color: #fff; /* White text color for header */
+    padding: 10px 0;
+    text-align: center; /* Center-align the header text */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px; /* Adds padding to make the hover effect more noticeable */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: white; /* Background color on hover */
+    color: black; /* Text color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #e0e0e0; /* Light grey background for main content */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-container button:hover {
+    background-color: #555;
+}
+
+#ordered-task-list, #unordered-task-list {
+    padding: 0;
+    margin-top: 20px;
+    display: none; /* Initially hide both lists */
+}
+
+#ordered-task-list li, #unordered-task-list li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ordered-task-list li button, #unordered-task-list li button {
+    padding: 5px 10px;
+    background-color: #ff4d4d; /* Red background for delete button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ordered-task-list li button:hover, #unordered-task-list li button:hover {
+    background-color: #ff3333;
+}
+
+footer {
+    background-color: #000; /* Black background for footer */
+    color: #fff; /* White text color for footer */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.tab-buttons button.active {
+    background-color: lightgrey; /* Change to light grey when active */
+}
